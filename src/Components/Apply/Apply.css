@@ -1,0 +1,50 @@
+.ship-form{
+    margin: 30px 100px;
+}
+.ship-form input{
+    display:block;
+    margin-top: 30px;
+    padding:5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 500px;
+}
+.error{
+    color:red;
+}
+.jobBody{
+
+    width: 500px !important;
+    padding-bottom: 80px !important;
+}
+@media only screen and (max-width: 800px) {
+    .ship-form input{
+        display:block;
+        margin-top: 30px;
+        padding:5px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        width: 400px;
+    }
+    .jobBody{
+
+        width: 400px !important;
+        padding-bottom: 80px !important;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .ship-form input{
+        display:block;
+        margin-top: 30px;
+        padding:5px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        width: 300px;
+    }
+    .jobBody{
+
+        width: 300px !important;
+        padding-bottom: 80px !important;
+    }
+  }
