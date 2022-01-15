@@ -7,7 +7,7 @@ const JobDetails = () => {
     const [JobDetails, setJobDetails] = useState({})
     console.log(id)
     useEffect(() => {
-        fetch(`http://localhost:4000/jobs/${id}`)
+        fetch(`https://thawing-ridge-17752.herokuapp.com/jobs/${id}`)
             .then((response) => response.json())
             .then((json) => {
                 setJobDetails(json)

@@ -34,7 +34,7 @@ const Jobs = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:4000/jobs')
+        fetch('https://thawing-ridge-17752.herokuapp.com/jobs')
             .then((response) => response.json())
             .then((json) => {
                 SetALLJobs(json)
