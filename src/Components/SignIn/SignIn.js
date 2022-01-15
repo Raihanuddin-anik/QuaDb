@@ -5,16 +5,22 @@ import { Card } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import firebaseConfig from '../firebase.config';
 import 'firebase/auth';
-
+import { UserContext } from '../../App';
+import { useHistory,useLocation, useNavigate } from 'react-router-dom';
 if (firebase.apps.length === 0) {
     firebase.initializeApp(firebaseConfig);
 }
 const SingIn = () => {
-
+    // const history = useNavigate  ();
+    // const location = useLocation();
+    // let { from } = location.state || { from: { pathname: "/" } };
 
     const provider = new GoogleAuthProvider();
-
+    const [userInfo, setUserInfo] = useContext(UserContext);
+    console.log(userInfo)
     const SingInWithGooglePopUp = () => {
+        
+       
         const auth = getAuth();
         signInWithPopup(auth, provider)
             .then((result) => {
@@ -23,7 +29,8 @@ const SingIn = () => {
                 const token = credential.accessToken;
                 // The signed-in user info.
                 const user = result.user;
-                console.log(user)
+                setUserInfo(user)
+               
                 // ...
             }).catch((error) => {
                 // Handle Errors here.

@@ -46,9 +46,9 @@ const Jobs = () => {
         <Container>
             <div className="row">
                 <div>
-                    <input type="radio" onClick={React} name="company" className="p-2" value="React" /><span className="me-2">React</span>
-                    <input type="radio" onClick={Angular} name="company" value="Angular" /><span className="me-2">Angular</span>
-                    <input type="radio" onClick={Vue} name="company" value="Vue" /><span className="me-2">Vue</span>
+                    <input type="radio" onClick={React} name="company" className="p-2" value="React.js" /><span className="me-2">React</span>
+                    <input type="radio" onClick={Angular} name="company" value="Angular.js" /><span className="me-2">Angular</span>
+                    <input type="radio" onClick={Vue} name="company" value="Vue.js" /><span className="me-2">Vue</span>
                     <input type="radio" onClick={All} name="company" value="All" /><span className="me-2">All</span>
 
 
