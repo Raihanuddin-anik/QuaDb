@@ -7,6 +7,8 @@ import {
   Route
 } from "react-router-dom";
 import Apply from './Components/Apply/Apply';
+import JobDetails from './Components/JobDetails/JobDetails';
+import SingIn from './Components/SignIn/SignIn';
 
 function App() {
   return (
@@ -16,6 +18,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Jobs />} />
           <Route path="/apply" element={<Apply />} />
+          <Route
+            path="jobdetails/:Id"
+            element={<JobDetails />}
+          />
+          <Route path="/signIn" element={<SingIn/>}/>
         </Routes>
       </BrowserRouter>
     </div>

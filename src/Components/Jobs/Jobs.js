@@ -10,21 +10,21 @@ const Jobs = () => {
     console.log(Jobs)
 
     const React = (e) => {
-        const pg = e.target.value;
-        const result1 = AllJobs.filter(jb => jb.name === pg);
+        const rt = e.target.value;
+        const result1 = AllJobs.filter(jb => jb.name === rt);
         SetJobs(result1)
     }
 
     const Angular = (e) => {
-        const bs = e.target.value;
-        const result2 = AllJobs.filter(jb => jb.name === bs);
+        const an = e.target.value;
+        const result2 = AllJobs.filter(jb => jb.name === an);
         console.log(result2)
         SetJobs(result2)
     }
 
     const Vue = (e) => {
-        const er = e.target.value;
-        const result3 = AllJobs.filter(jb => jb.name === er);
+        const vue = e.target.value;
+        const result3 = AllJobs.filter(jb => jb.name === vue);
         console.log(result3)
         SetJobs(result3)
     }
